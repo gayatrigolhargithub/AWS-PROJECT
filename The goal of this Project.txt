@@ -1,0 +1,15 @@
+Objective: The goal of this exercise is to demonstrate the practical implementation of AWS Identity and Access Management (IAM) features, including user and group management, policy creation, and the use of roles and permissions to enforce access controls. This scenario involves setting up IAM users and groups, creating and attaching policies to manage access, and verifying permissions through hands-on tasks.
+
+All the task needs to be performed in us-east-1 region.
+
+Create 3 IAM users named ‘Dev’, ‘Ops’, ‘Prod’ and create a usergroup named ‘Intellipaat’ and add these users to this group.
+Create 2 different policies and attach to usergroup:
+‘Policy 1’ – Users should be able to create access keys but for users in their group only.
+‘Policy 2’ – Launch EC2 permission and connect permission.
+Create an inline policy for Dev user having the permission to list the buckets in S3 service.
+Create an inline policy for Ops user having the permission to upload data in any existing bucket in S3 service.
+Create an IAM role for Prod user having the privilege to access S3 service completely, then switch to the role and show the access of S3 service by creating a bucket name= ‘your_name-prod’ and upload data in it.
+Login from Dev user and create an access key for user ‘Dev’ and user ‘Ops’.
+Login from Dev user showing user is able to list all the bucket and getting error while uploading data in bucket created in previous task.
+Login from Ops user showing user is able to upload data in bucket created in previous task.
+Login from Prod user and launch an Ubuntu EC2 instance, ‘name=PRT’ and connect to it.
